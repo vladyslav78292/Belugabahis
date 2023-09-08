@@ -94,7 +94,7 @@ main tbody {
 }
 
 main table td {
-  border: 1px solid #969292;
+  border: 1px solid #086460;
   padding: 10px;
   vertical-align: middle
 }
@@ -270,8 +270,8 @@ header > div:first-of-type {
 
 .buttons > a {
   padding: 10px 15px;
-  color: #fff;
-  background-color: #EDE04C;
+  color: #EDE04C;
+  background-color: #082C2A;
   text-decoration: none;
   font-weight: bold;
 }
@@ -296,6 +296,9 @@ header > div:first-of-type {
   cursor: pointer;
 }
 
+p, h1, h2, h3, li, span, tr, td {
+  color: #555;
+}
 .select > span {
   font-size: 18px;
   text-align: start;
@@ -400,11 +403,31 @@ footer > p {
 }
 
 .homepage {
+  width: 40%;
+}
+
+.destek, .license {
+  width: 250px;
+}
+
+.options, .mobile {
+  width: 350px;
+}
+
+.homepage_container {
+  justify-content: space-around;
+}
+
+.promo, .bonus {
   width: 50%;
 }
 
-.destek, .license, .mobile, .options {
-  width: 250px;
+.mobile_container {
+  justify-content: flex-start;
+}
+
+.destek_container {
+  max-width: 90%;
 }
 
 @media (max-width: 1200px) {
@@ -425,11 +448,23 @@ footer > p {
   .options_container {
     flex-direction: column-reverse;
   }
+
+  .destek_container {
+    max-width: 100%;
+  }
+
+  .mobile {
+    width: 250px;
+  }
 }
 
 @media (max-width: 768px) {
   .homepage_container {
     flex-direction: column;
+  }
+
+  .options {
+    width: 250px;
   }
 
   .homepage {
@@ -457,5 +492,9 @@ footer > p {
 
   h1 {
     font-size: 2.5em;
+  }
+
+  .options_container {
+    flex-direction: column-reverse;
   }
 }
